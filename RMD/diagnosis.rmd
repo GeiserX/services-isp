@@ -1,0 +1,30 @@
+---
+title: "Diagnosis de Conexión a Internet"
+author: "Internet Levante"
+date: '`r Sys.time()`'
+output: pdf_document
+geometry: margin=0.5in
+---
+
+Buenos días, estimado cliente.
+
+Aquí encontrarás un informe de su conexión a Internet con nosotros:
+
+```{r, echo=FALSE, results='asis'}
+tabla[,1] <- user$username
+tabla[,6] <- ip$framedipaddress
+kable(tabla[,c(1,2,3,6)], format = "latex")
+```
+    
+```{r, echo=FALSE, results='asis'}
+kable(SSH[,c(2,4,6,7,8,9,10,11)], format = "latex")
+```
+
+```{r, echo=FALSE, results='asis'}
+kable(connections[1:5,c(2,3,4,5,7,8)], format = "latex")
+```
+
+Gracias por confiar en nosotros
+
+[Electrónica Martínez](http://www.electronicamartinez.com)
+
