@@ -1,6 +1,6 @@
 # Services for ISP
 
-Webapp with several services for a common ISP
+Webapp which automates common tasks for a common ISP
 
 It includes:
 
