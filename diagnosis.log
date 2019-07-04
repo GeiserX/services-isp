@@ -1,0 +1,59 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdfetex 2016.2.12)  15 FEB 2016 11:05
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\nonstopmode \catcode126=12 \def\normaltilde{~}\catcode126=13 \let~\normaltil
+de  \input ./diagnosis.txt
+(./diagnosis.txt
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.6   pdf_
+          document:
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.7 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ­ in font cmr10!
+
+Overfull \hbox (33.95674pt too wide) in paragraph at lines 10--11
+\tenrm HTML, PDF, and MS Word doc-u-ments. For more de-tails on us-ing R Mark-d
+own see <http://rmarkdown.rstudio.com>. |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm H
+.\tenrm T
+.\tenrm M
+.\tenrm L
+.\tenrm ,
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.16     keep_
+              tex: true
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+)
+! Emergency stop.
+<*> ...3 \let~\normaltilde  \input ./diagnosis.txt
+                                                  
+*** (job aborted, no legal \end found)
+
+!  ==> Fatal error occurred, no output PDF file produced!
