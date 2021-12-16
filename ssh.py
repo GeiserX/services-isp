@@ -1,7 +1,7 @@
 import sys
 from pexpect import pxssh
 s = pxssh.pxssh()
-s.login(sys.argv[1], "admin", "password")  
+s.login(sys.argv[1], "admin", "examplepassword")  
 s.sendline("mca-status")
 s.prompt()
 print s.before
@@ -14,7 +14,7 @@ s.logout()
 #              python.exec(python.code = sprintf(
 # 'from pexpect import pxssh
 # s = pxssh.pxssh()
-# s.login("%s", "admin", "t1l2cm3r")  
+# s.login("%s", "admin", "examplepassword")  
 # s.sendline("mca-status")
 # s.prompt()
 # stats = s.before
