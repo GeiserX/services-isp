@@ -11,7 +11,7 @@ It includes:
  
 ## Author
 
-* **Sergio Fernández** - *Creator* - [DrumSergio](https://github.com/DrumSergio)
+* **Sergio Fernández** - *Creator* - [GeiserX](https://github.com/GeiserX)
 
 ## License
 
