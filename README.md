@@ -21,6 +21,13 @@ It includes:
 3) Email signature creation. This automates the process to create a simple HTML signature for the company to use.
 4) A web interface to a web-less VDSL DSLAM. Very handy in case you do not want to connect each time via SSH. Simply connect to the web and perform actions.
 
+## Related ISP/Telecom Tools
+
+- [genieacs-container](https://github.com/GeiserX/genieacs-container) — Helm chart and container for GenieACS TR-069
+- [router-express](https://github.com/GeiserX/router-express) — Auto-configure routers and sync databases
+- [statix](https://github.com/GeiserX/statix) — Real-time ISP network statistics dashboard
+- [ScriptPoblar](https://github.com/GeiserX/ScriptPoblar) — Batch device provisioning and CRM operations
+
 ## Author
 
 [@GeiserX](https://github.com/GeiserX)
