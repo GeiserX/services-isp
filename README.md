@@ -24,7 +24,7 @@ It includes:
 
 ## Quick start
 
-You need R with `shiny`, `shinyjs`, `DT`, `stringr`, `readr`, `RMySQL`, `RSelenium`, `rPython` and `knitr`, Python 2 for the antenna, DSLAM and SSH helpers, and MySQL access to the ISP's databases. Set the hosts and passwords in `server.R`, then:
+You need R with `shiny`, `shinyjs`, `DT`, `stringr`, `readr`, `RMySQL`, `RSelenium`, `rPython` and `knitr`, Python 3 for `GetAntena.py`, Python with `paramiko` and `pexpect` for the SSH and DSLAM steps (run through `rPython`), and MySQL access to the ISP's databases. The code reads and writes under `/home/tecnico/WebServicios`, so clone it there. Set the hosts and passwords in `server.R`, then:
 
 ```bash
 Rscript -e 'shiny::runApp(".", port = 8081, host = "127.0.0.1")'
