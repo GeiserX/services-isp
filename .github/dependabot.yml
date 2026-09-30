@@ -13,3 +13,17 @@ updates:
       - "automated"
     commit-message:
       prefix: "ci"
+  # docs.yml pip-installs docs/requirements-docs.txt to build the site.
+  - package-ecosystem: "pip"
+    directory: "/docs"
+    schedule:
+      interval: "monthly"
+    groups:
+      docs:
+        patterns:
+          - "*"
+    labels:
+      - "documentation"
+      - "automated"
+    commit-message:
+      prefix: "docs"
