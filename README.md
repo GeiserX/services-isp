@@ -5,6 +5,7 @@
 <h1 align="center">services-isp</h1>
 
 <p align="center">
+  <a href="https://github.com/GeiserX/services-isp/releases"><img src="https://img.shields.io/github/v/release/GeiserX/services-isp" alt="Release" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/github/license/GeiserX/services-isp" alt="License" /></a>
 </p>
 
@@ -14,13 +15,13 @@
 
 An R/Shiny webapp that automates common tasks at an ISP.
 
-It includes:
+## Features
 
-1) A client lookup: type a client number or name and get the CPE, antenna and traffic data in one screen.
-2) An online checker that writes a PDF report to find faults in a client's connection. It connects to the antenna and the router and reads the traffic history. It has two tabs: a quick version and the full one.
-3) An alarm for customers who went over their monthly quota, with a report every month.
-4) Email signatures: it builds the simple HTML signature the company uses.
-5) A web interface for a VDSL DSLAM that has none, so you do not have to SSH in for every action.
+- Look up a client by PPPoE user, client number or name: the account, whether it is online, its IP, CPE and antenna, and every session with its traffic.
+- Diagnose a line: the antenna's radio stats over SSH, ping, traceroute and nmap, and a one-page PDF report for the client.
+- List the mobile and fixed lines whose extra charges passed the alarm threshold, refreshed every 30 minutes from the carrier's billing portal.
+- Build the company email signature from a form and download it as HTML or JPG.
+- Read a VDSL DSLAM board's 32 ports in a table, and label a port, without opening an SSH session.
 
 ## Quick start
 
@@ -31,6 +32,20 @@ Rscript -e 'shiny::runApp(".", port = 8081, host = "127.0.0.1")'
 ```
 
 Open http://127.0.0.1:8081. The diagnosis PDF is rendered from `RMD/diagnosis.rmd`; the GeCo tabs drive a browser through `selenium-server-standalone.jar`.
+
+The full list of what it needs, and every setting to fill in: [Getting started](https://geiserx.github.io/services-isp/getting-started/).
+
+## Documentation
+
+The docs are at [geiserx.github.io/services-isp](https://geiserx.github.io/services-isp/).
+
+- [Getting started](https://geiserx.github.io/services-isp/getting-started/): what it needs, where to clone it, the first run, the background jobs
+- [Configuration](https://geiserx.github.io/services-isp/configuration/): every host, password, path, port and threshold, with its file and line
+- [Usage](https://geiserx.github.io/services-isp/usage/): the five tabs, what you type and what comes back
+- [How it works](https://geiserx.github.io/services-isp/how-it-works/): what talks to what, and the security model
+- [Troubleshooting](https://geiserx.github.io/services-isp/troubleshooting/): blank tabs, the messages, the PDF, VDSL and the alarm lists
+
+Bugs go to the [issues](https://github.com/GeiserX/services-isp/issues); security problems to the [security policy](SECURITY.md), never a public issue.
 
 ## Related projects
 
