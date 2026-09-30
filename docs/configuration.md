@@ -23,7 +23,7 @@ The NAS link in the client table uses the last word of `nas.shortname` as the ro
 
 ## Routers
 
-`GetAntena.py` logs in to the NAS over the RouterOS API on port 8728 and prints its DHCP leases. Set the API user and password on line 157 (`apiros.login("admin", "PASSWORD")`). The port is on line 138.
+`GetAntena.py` logs in to the NAS over the plain (non-TLS) RouterOS API on port 8728 and prints its DHCP leases. Set the API user and password on line 157 (`apiros.login("admin", "PASSWORD")`). The port is on line 138.
 
 ## Antennas
 

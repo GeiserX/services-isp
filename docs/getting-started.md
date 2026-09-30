@@ -49,6 +49,13 @@ sh GeCoMovil.sh                                          # mobile lines -> data/
 Rscript /home/tecnico/WebServicios/GECOfija.R            # fixed lines  -> data/listaEXCEEDfijo.csv
 ```
 
-Both connect to a Selenium server on `localhost` (port 4448 for mobile, 4446 for fixed). No script in the repo starts that server; `selenium-server-standalone.jar` in the repo is presumably it. `mailR.R` mails both CSVs when you run it, and nothing in the repo schedules it: use cron. [How it works](how-it-works.md#the-background-jobs) has the details.
+Both connect to a Selenium server on `localhost` (port 4448 for mobile, 4446 for fixed). No script in the repo starts that server. `selenium-server-standalone.jar` in the repo is the Selenium 2.48.0 standalone server; start one instance per port from the repo root before the scrapers:
+
+```bash
+java -jar selenium-server-standalone.jar -port 4448   # mobile scraper
+java -jar selenium-server-standalone.jar -port 4446   # fixed scraper
+```
+
+`mailR.R` mails both CSVs when you run it, and nothing in the repo schedules it: use cron. [How it works](how-it-works.md#the-background-jobs) has the details.
 
 Next: [Usage](usage.md) for what each tab does.

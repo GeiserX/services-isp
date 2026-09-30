@@ -16,7 +16,7 @@ flowchart LR
         SEL[Selenium server<br/>+ PhantomJS]
     end
     DB[(RADIUS database<br/>MySQL)]
-    NAS[MikroTik NAS<br/>API 8728]
+    NAS[MikroTik NAS<br/>API 8728, no TLS]
     ANT[Client antenna<br/>SSH, mca-status]
     DSL[DSLAM<br/>SSH]
     NET[Client IP<br/>ping, traceroute, nmap]
