@@ -4,3 +4,6 @@
 
 # MkDocs build output
 site/
+
+# Beads: bead text lives in the Dolt tracker only, never in git
+.beads/*.jsonl
